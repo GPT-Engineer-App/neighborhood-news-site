@@ -1,4 +1,4 @@
-import { Container, Heading, Text, Box, Image, Link, Flex } from "@chakra-ui/react";
+import { Container, Heading, Text, Box, Image, Link, Flex, VStack } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
 
 const News = () => {
