@@ -1,7 +1,10 @@
 import { Container, VStack, Heading, Text, Box, Image, Link, Flex } from "@chakra-ui/react";
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Index = () => {
+  const navigate = useNavigate();
+
   return (
     <Container maxW="container.xl" p={4}>
       <VStack spacing={8}>
@@ -20,7 +23,7 @@ const Index = () => {
           <Text mt={2}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar facilisis justo mollis, auctor consequat urna.
           </Text>
-          <Link color="teal.500" href="#" mt={2} display="block">
+          <Link color="teal.500" onClick={() => navigate('/news/featured')} mt={2} display="block">
             Read more
           </Link>
         </Box>
@@ -34,7 +37,7 @@ const Index = () => {
             <Text mt={2}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar facilisis justo mollis, auctor consequat urna.
             </Text>
-            <Link color="teal.500" href="#" mt={2} display="block">
+            <Link color="teal.500" onClick={() => navigate('/news/1')} mt={2} display="block">
               Read more
             </Link>
           </Box>
@@ -46,7 +49,7 @@ const Index = () => {
             <Text mt={2}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar facilisis justo mollis, auctor consequat urna.
             </Text>
-            <Link color="teal.500" href="#" mt={2} display="block">
+            <Link color="teal.500" onClick={() => navigate('/news/2')} mt={2} display="block">
               Read more
             </Link>
           </Box>
